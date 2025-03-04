@@ -1,0 +1,126 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.auth-card h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.auth-card p {
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.form-group input {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(var(--primary-rgb), 0.2);
+}
+
+.auth-button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.auth-button:hover {
+  background-color: var(--primary-dark);
+}
+
+.auth-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.auth-error {
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  background-color: rgba(255, 84, 84, 0.1);
+  color: #ff5454;
+  border: 1px solid rgba(255, 84, 84, 0.3);
+}
+
+.auth-links {
+  margin-top: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.auth-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.auth-links a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .auth-card {
+    padding: 1.5rem;
+  }
+  
+  .auth-card h2 {
+    font-size: 1.5rem;
+  }
+}

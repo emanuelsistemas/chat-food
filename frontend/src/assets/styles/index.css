@@ -1,0 +1,102 @@
+:root {
+  /* Cores principais */
+  --primary-color: #6c5ce7;
+  --secondary-color: #a29bfe;
+  --accent-color: #00cec9;
+  
+  /* Cores de fundo */
+  --bg-color: #ffffff;
+  --card-bg: #f7f8fc;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+  
+  /* Cores de texto */
+  --text-color: #2d3436;
+  --label-color: #636e72;
+  --input-color: #2d3436;
+  
+  /* Cores de componentes */
+  --input-bg: #f7f8fc;
+  --input-border: #dfe6e9;
+  --input-focus-border: #6c5ce7;
+  
+  /* Cores de feedback */
+  --success-color: #00b894;
+  --error-color: #d63031;
+  --warning-color: #fdcb6e;
+  --info-color: #0984e3;
+}
+
+[data-theme="light"] {
+  /* Cores principais */
+  --primary-color: #6c5ce7;
+  --secondary-color: #a29bfe;
+  --accent-color: #00cec9;
+  
+  /* Cores de fundo */
+  --bg-color: #ffffff;
+  --card-bg: #f7f8fc;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+  
+  /* Cores de texto */
+  --text-color: #2d3436;
+  --label-color: #636e72;
+  --input-color: #2d3436;
+  
+  /* Cores de componentes */
+  --input-bg: #f7f8fc;
+  --input-border: #dfe6e9;
+  --input-focus-border: #6c5ce7;
+  
+  /* Cores de feedback */
+  --success-color: #00b894;
+  --error-color: #d63031;
+  --warning-color: #fdcb6e;
+  --info-color: #0984e3;
+}
+
+[data-theme="dark"] {
+  /* Cores principais */
+  --primary-color: #6c5ce7;
+  --secondary-color: #a29bfe;
+  --accent-color: #00cec9;
+  
+  /* Cores de fundo */
+  --bg-color: #2d3436;
+  --card-bg: #1e272e;
+  --overlay-bg: rgba(0, 0, 0, 0.7);
+  
+  /* Cores de texto */
+  --text-color: #dfe6e9;
+  --label-color: #b2bec3;
+  --input-color: #dfe6e9;
+  
+  /* Cores de componentes */
+  --input-bg: #1e272e;
+  --input-border: #636e72;
+  --input-focus-border: #6c5ce7;
+  
+  /* Cores de feedback */
+  --success-color: #00b894;
+  --error-color: #ff7675;
+  --warning-color: #ffeaa7;
+  --info-color: #74b9ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

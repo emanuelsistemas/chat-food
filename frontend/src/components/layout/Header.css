@@ -1,0 +1,152 @@
+.header {
+  padding: 20px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+/* Estilo do ícone do ChatBot */
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.bot-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.bot-icon {
+  color: white;
+  font-size: 18px;
+}
+
+.glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(108, 92, 231, 0.3);
+  filter: blur(5px);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+.message-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.message-icon {
+  color: white;
+  font-size: 12px;
+}
+
+.logo-text-header {
+  font-family: 'Pacifico', cursive;
+  font-size: 28px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  padding-right: 10px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.login-btn {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  padding: 8px 15px;
+  border-radius: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-btn:hover {
+  color: var(--primary-color);
+  background-color: rgba(108, 92, 231, 0.1);
+}
+
+.signup-btn {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+}
+
+.signup-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(108, 92, 231, 0.4);
+}
